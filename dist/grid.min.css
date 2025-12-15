@@ -1,0 +1,13 @@
+*,*:before,*:after{box-sizing:border-box}
+body{margin:0;padding:0;overflow-x:hidden}
+img{max-width:100%;height:auto;display:block}
+.container,.container-fluid{width:100%;padding-right:.75rem;padding-left:.75rem;margin-right:auto;margin-left:auto}
+.container-fluid{max-width:100%}
+.row{display:flex;flex-wrap:wrap;margin-right:-.75rem;margin-left:-.75rem}
+.row>*{flex-shrink:0;width:100%;max-width:100%;padding-right:.75rem;padding-left:.75rem}
+.g-0>*{padding-left:0;padding-right:0}
+.g-1>*{padding-left:.25rem;padding-right:.25rem}
+.g-2>*{padding-left:.5rem;padding-right:.5rem}
+.g-3>*{padding-left:1rem;padding-right:1rem}
+.g-4>*{padding-left:1.5rem;padding-right:1.5rem}
+.g-5>*{padding-left:3rem;padding-right:3rem}

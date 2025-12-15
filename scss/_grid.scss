@@ -1,0 +1,67 @@
+---
+
+## 2️⃣ `scss/_grid.scss`
+/* ============================================
+   Clean Grid CSS
+   SCSS Source
+   ============================================ */
+
+$gutter-xs: 0.25rem;
+$gutter-sm: 0.5rem;
+$gutter-md: 1rem;
+$gutter-lg: 1.5rem;
+$gutter-xl: 3rem;
+
+$container-padding: 0.75rem;
+
+/* --------------------------------------------
+   Reset (grid safety only)
+   -------------------------------------------- */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* --------------------------------------------
+   Containers
+   -------------------------------------------- */
+.container,
+.container-fluid {
+  width: 100%;
+  padding-left: $container-padding;
+  padding-right: $container-padding;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.container-fluid {
+  max-width: 100%;
+}
+
+/* --------------------------------------------
+   Rows & Columns
+   -------------------------------------------- */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -$container-padding;
+  margin-right: -$container-padding;
+}
+
+.row > * {
+  width: 100%;
+  max-width: 100%;
+  padding-left: $container-padding;
+  padding-right: $container-padding;
+}
+
+/* --------------------------------------------
+   Gutters
+   -------------------------------------------- */
+.g-0 > * { padding-left: 0; padding-right: 0; }
+.g-1 > * { padding-left: $gutter-xs; padding-right: $gutter-xs; }
+.g-2 > * { padding-left: $gutter-sm; padding-right: $gutter-sm; }
+.g-3 > * { padding-left: $gutter-md; padding-right: $gutter-md; }
+.g-4 > * { padding-left: $gutter-lg; padding-right: $gutter-lg; }
+.g-5 > * { padding-left: $gutter-xl; padding-right: $gutter-xl; }
